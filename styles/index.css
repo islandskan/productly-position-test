@@ -8,7 +8,7 @@ body {
 }
 
 
-ul {
-    list-style-image: url('check-box.png');
-    list-style-position: outside;
+::marker {
+    list-style-image: url(/images/check-box.png);
+
 }
