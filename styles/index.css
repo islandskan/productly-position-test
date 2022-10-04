@@ -363,6 +363,7 @@ form input:focus {
     footer {
         flex-direction: column;
         padding-top: 40px;
+        margin-bottom: 40px;
     }
 
     form input {
