@@ -43,7 +43,6 @@ body {
 }
 
 main {
-    /* border: 1px solid green; */
     padding: 20px 0;
 }
 
@@ -52,6 +51,8 @@ section {
     padding-top: 45px;
     padding-bottom: 45px;
 }
+
+/* Components */
 
 .menu {
     display: flex;
@@ -65,11 +66,9 @@ section {
     line-height: 28px;
     }
 
-
     .header__btns a:first-of-type {
         margin-right: 20px;
     }
-/* Components */
 
 .logo {
     margin-right: 10px;
@@ -127,7 +126,6 @@ section {
     color: #2f281e;
     font-size: 22px;
     font-weight: 600;
-    /* margin-bottom: 13px; */
 }
 
 .tools__container--card p {
@@ -515,9 +513,6 @@ form input:focus {
 
 @media screen and (min-width: 1200px) {
 
-    section {
-        padding-top: 10px;
-    }
     header,
     main,
     footer {
@@ -567,6 +562,7 @@ form input:focus {
 
 .hero {
     padding-top: 45px;
+    margin-top: 45px;
 }
 
 footer {
