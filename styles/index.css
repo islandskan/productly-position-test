@@ -455,25 +455,40 @@ form input:focus {
 
     .footer__menu {
         height: 205px; */
-        /* justify-content: flex-end; */
     }
 
-    footer {
-    flex-direction: row;
-}
+    .tools__text, .validation__text, .product__text, .marketers__text {
+        max-width: 500px;
+    }
 
-footer .logo {
-    height: 137px;
-}
+    .tools h3 {
+        text-align: start;
+    }
 
-.footer__container {
-     flex-grow: 0.7;
-    justify-content: space-between;
-    padding-bottom: 42px;
-}
+    .tools__text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tools__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
 }
 
 @media screen and (min-width: 1024px) {
+
+    footer .logo {
+        height: 137px;
+    }
+
+    .footer__container {
+        flex-grow: 0.7;
+       justify-content: space-between;
+       padding-bottom: 42px;
+   }
 }
 
 @media screen and (min-width: 1200px) {
