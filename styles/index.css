@@ -326,7 +326,8 @@ form input:focus {
 
     h2 {
         color: #2f281e;
-        font-size: 44px;
+        /* font-size: 44px; */
+        font-size: 40px;
         font-weight: 700;
         line-height: 56px;
         max-width: fit-content;
@@ -352,6 +353,10 @@ form input:focus {
         align-items: center;
     }
 
+    .product {
+        flex-direction: column-reverse;
+    }
+
     .tools__text, .validation__text,
     .product__text,
     .marketers__text {
@@ -359,14 +364,9 @@ form input:focus {
     width: 100%;
     }
 
-    .validation__text, .marketers__text {
+    .validation__text, .marketers__text, .product__text {
         margin-bottom: 40px;
         padding-bottom: 40px;
-    }
-
-    .product__text {
-        margin-top: 40px;
-        padding-top: 40px;
     }
 
     footer {
@@ -412,6 +412,10 @@ form input:focus {
 }
 
 @media screen and (min-width: 768px) {
+
+    h2 {
+        font-size: 44px;
+    }
 }
 
 @media screen and (min-width: 900px) {
