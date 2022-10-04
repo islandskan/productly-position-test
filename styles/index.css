@@ -40,11 +40,10 @@ body {
     max-width: 1440px;
     margin: auto;
     width: 100%;
-    border: 2px solid black;
 }
 
 main {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     padding: 20px 0;
 }
 
@@ -416,6 +415,26 @@ form input:focus {
     h2 {
         font-size: 44px;
     }
+
+
+    footer {
+        justify-content: space-between;
+        justify-content: center;
+    }
+
+    footer .logo {
+        margin-bottom: 20px;
+    }
+
+    .footer__container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer__menu:first-of-type {
+        margin: 0;
+    }
+
 }
 
 @media screen and (min-width: 900px) {
@@ -440,8 +459,7 @@ form input:focus {
     }
 
     footer {
-    align-items: flex-end;
-     justify-content: space-between;
+    flex-direction: row;
 }
 
 footer .logo {
