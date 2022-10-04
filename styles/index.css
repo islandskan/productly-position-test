@@ -43,7 +43,7 @@ body {
 }
 
 main {
-    /* border: 1px solid green; */
+    border: 1px solid green;
     padding: 20px 0;
 }
 
@@ -55,17 +55,20 @@ section {
 
 .menu {
     display: flex;
-    flex-grow: 0.5;
     justify-content: space-around;
     margin-right: 29px;
     }
 
-    .menu\_\_item a {
+    .menu__item a {
     font-size: 14px;
     font-weight: 400;
     line-height: 28px;
     }
 
+
+    .header__btns a:first-of-type {
+        margin-right: 20px;
+    }
 /* Components */
 
 .logo {
@@ -435,6 +438,10 @@ form input:focus {
         margin: 0;
     }
 
+    .footer__form {
+        align-items: flex-start;
+    }
+
 }
 
 @media screen and (min-width: 900px) {
@@ -489,6 +496,23 @@ form input:focus {
        justify-content: space-between;
        padding-bottom: 42px;
    }
+
+
+
+   .menu {
+    flex-grow: 0.5;
+    margin-right: 40px;
+    }
+
+
+.menu,
+.header__btns {
+    display: inline-flex;
+}
+
+.mobile-menu {
+    display: none;
+}
 }
 
 @media screen and (min-width: 1200px) {
@@ -497,6 +521,13 @@ form input:focus {
     footer {
         width: 78%;
     }
+/*
+
+    .menu {
+        flex-grow: 0.5;
+        margin-right: 40px;
+        }
+
 
     .menu,
     .header__btns {
@@ -505,5 +536,9 @@ form input:focus {
 
     .mobile-menu {
         display: none;
-    }
+    } */
+}
+
+@media screen and (min-width: 1440px) {
+
 }
