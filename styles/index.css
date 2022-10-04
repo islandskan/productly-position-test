@@ -43,7 +43,7 @@ body {
 }
 
 main {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     padding: 20px 0;
 }
 
@@ -144,9 +144,7 @@ section {
     .tools, .validation,
     .product,
     .marketers {
-    /* align-items: center; */
     display: flex;
-    /* justify-content: flex-end; */
     }
 
     .validation__text--title,
@@ -516,27 +514,87 @@ form input:focus {
 }
 
 @media screen and (min-width: 1200px) {
+
+    section {
+        padding-top: 10px;
+    }
     header,
     main,
     footer {
         width: 78%;
     }
-/*
 
-    .menu {
-        flex-grow: 0.5;
-        margin-right: 40px;
-        }
-
-
-    .menu,
-    .header__btns {
-        display: inline-flex;
+    .hero {
+        flex-direction: row;
     }
 
-    .mobile-menu {
-        display: none;
-    } */
+    .hero__btns {
+        justify-content: flex-start;
+        width: fit-content;
+    }
+
+    .tools, .validation, .product, .marketers {
+        flex-direction: row;
+    }
+
+    .tools__text, .validation__text, .product__text, .marketers__text {
+        max-width: 486px;
+        width: 100%;
+    }
+
+    .tools__text {
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .tools h3 {
+        text-align: center;
+    }
+
+    .tools__container {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .validation__img,
+    .marketers__img {
+    margin-left: 52px;
+    }
+
+.product__img {
+    margin-right: 52px;
+}
+
+.hero {
+    padding-top: 45px;
+}
+
+footer {
+    flex-direction: row;
+    padding-bottom: 40px;
+    justify-content: space-between;
+}
+
+footer .logo {
+    padding-top: 20px;
+}
+
+.footer__container {
+    padding-bottom: 0;
+    flex-grow: 0.85;
+}
+
+.footer__menu {
+    justify-content: flex-end;
+    margin-bottom: 0;
+    line-height: 35px;
+}
+
+.footer__form {
+    justify-content: flex-end;
+    flex-grow: 0.4;
+}
+
 }
 
 @media screen and (min-width: 1440px) {
